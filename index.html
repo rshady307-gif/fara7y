@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation | Sophia & Alexander</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <button onclick="shareOnWhatsApp()">Share</button>
+
+<script>
+function shareOnWhatsApp() {
+  var url = "file:///C:/Users/mem11/OneDrive/Desktop/el%20fara7/index.html";
+  var whatsappUrl = "https://wa.me/?text=" + encodeURIComponent(url);
+  window.open(whatsappUrl, "_blank");
+}
+</script>
+
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="bg-pattern"></div>
+        <div class="bg-arch"></div>
+        
+        <!-- Floating Hearts -->
+        <div class="hearts-container" id="heartsContainer"></div>
+
+        <div class="hero-content">
+            <div class="hero-image-wrap">
+                <div class="hero-image-card">
+                    <img src="dd20d1a8f2b5bc95f4776a124d6659cf.jpg" alt="Bride and Groom">
+                    <div class="hero-image-overlay"></div>
+                </div>
+            </div>
+
+            <div class="hero-text">
+                <p class="subtitle">We're getting married</p>
+                <div class="divider">
+                    <span class="line"></span>
+                    <svg class="heart-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                    <span class="line"></span>
+                </div>
+
+                <h1 class="main-name">Sophia</h1>
+                <div class="ampersand">
+                    <span class="line"></span>
+                    <span class="amp-sign">&</span>
+                    <span class="line"></span>
+                </div>
+                <h1 class="main-name">Alexander</h1>
+
+                <p class="quote">"Two souls, one heart, one love forever"</p>
+                
+                <div class="date-info">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                    <span>Saturday, June 15, 2025</span>
+                    <span class="dot">•</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    <span>7:00 PM</span>
+                </div>
+
+                <!-- Countdown -->
+                <div class="countdown" id="countdown">
+                    <div class="time-box">
+                        <p class="time-val" id="days">00</p>
+                        <p class="time-label">Days</p>
+                    </div>
+                    <div class="time-box">
+                        <p class="time-val" id="hours">00</p>
+                        <p class="time-label">Hours</p>
+                    </div>
+                    <div class="time-box">
+                        <p class="time-val" id="minutes">00</p>
+                        <p class="time-label">Mins</p>
+                    </div>
+                    <div class="time-box">
+                        <p class="time-val" id="seconds">00</p>
+                        <p class="time-label">Secs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section class="schedule-section">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">The Flow</p>
+                <h2 class="section-title">Wedding Schedule</h2>
+                <div class="divider">
+                    <span class="line"></span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7.4-6.3-4.6L5.7 21.4 8 14 2 9.4h7.6z"/></svg>
+                    <span class="line"></span>
+                </div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-time">6:00 PM</div>
+                        <div class="timeline-content">
+                            <h4>Arrival & Welcome</h4>
+                            <p>Drinks & canapés in the garden</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-time">7:00 PM</div>
+                        <div class="timeline-content">
+                            <h4>Ceremony</h4>
+                            <p>Exchange of vows</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-time">8:00 PM</div>
+                        <div class="timeline-content">
+                            <h4>Dinner & Toasts</h4>
+                            <p>Fine dining & speeches</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-time">10:00 PM</div>
+                        <div class="timeline-content">
+                            <h4>Party Time</h4>
+                            <p>First dance & celebration</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Details Section -->
+    <section class="details-section">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Details</p>
+                <h2 class="section-title">Celebration Details</h2>
+                <div class="divider">
+                    <span class="line"></span>
+                    <svg class="heart-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                    <span class="line"></span>
+                </div>
+            </div>
+
+            <div class="details-grid">
+                <!-- Venue -->
+                <div class="detail-card venue-card">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <h3 class="card-title">The Venue</h3>
+                    <p class="card-subtitle">The Grand Ballroom</p>
+                    <p class="card-subtitle">Rosewood Garden Estate, Beverly Hills</p>
+                    <div class="map-container">
+                        <iframe
+                            title="Wedding Venue Location"
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=-118.4280%2C34.0720%2C-118.4160%2C34.0800&layer=mapnik&marker=34.0760%2C-118.4220"
+                            loading="lazy"
+                        ></iframe>
+                        <a href="https://www.openstreetmap.org/?mlat=34.0760&mlon=-118.4220#map=15/34.0760/-118.4220" target="_blank" rel="noopener noreferrer" class="map-btn">
+                            View on Map
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Dress Code -->
+                <div class="detail-card dress-card">
+                    <div class="card-icon">
+                        <svg class="heart-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                    </div>
+                    <h3 class="card-title">Dress Code</h3>
+                    <p class="card-subtitle">Garden Elegance — Earthy & Warm Tones</p>
+                    
+                    <div class="colors-grid">
+                        <div class="color-item">
+                            <div class="color-swatch" style="background-color: #d4c4a8;"></div>
+                            <span>Beige</span>
+                        </div>
+                        <div class="color-item">
+                            <div class="color-swatch" style="background-color: #c9a98e;"></div>
+                            <span>Mocha</span>
+                        </div>
+                        <div class="color-item">
+                            <div class="color-swatch" style="background-color: #7a6b5d;"></div>
+                            <span>Taupe</span>
+                        </div>
+                        <div class="color-item">
+                            <div class="color-swatch" style="background-color: #a08870;"></div>
+                            <span>Bronze</span>
+                        </div>
+                    </div>
+                    
+                    <p class="dress-note">
+                        Gentlemen: Suit & tie in complementary tones. Ladies: Floor-length or cocktail dresses in earthy hues.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Song Section -->
+    <section class="song-section">
+        <div class="container small-container">
+            <div class="section-header">
+                <p class="section-subtitle">From the Bride</p>
+                <h2 class="section-title">Our Love Song</h2>
+                <div class="divider">
+                    <span class="line"></span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                    <span class="line"></span>
+                </div>
+                <p class="section-desc">Sophia has chosen a special song for the evening. Press play to listen and feel the love.</p>
+            </div>
+
+            <div class="song-card">
+                <div class="song-player">
+                    <button id="playBtn" class="play-btn">
+                        <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                        <svg id="pauseIcon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+                    </button>
+                    <div class="song-info">
+                        <p class="song-label">Bride's Pick</p>
+                        <p class="song-title">A Thousand Years</p>
+                        <p class="song-artist">Christina Perri</p>
+                    </div>
+                </div>
+
+                <div class="visualizer" id="visualizer"></div>
+
+                <form id="songForm" class="song-form">
+                    <p class="form-label">Bride: Add a new song for guests to enjoy</p>
+                    <div class="form-grid">
+                        <input type="text" id="songTitle" placeholder="Song title" required>
+                        <input type="text" id="songArtist" placeholder="Artist name" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Add to Playlist</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- RSVP Section -->
+    <section class="rsvp-section">
+        <div class="container small-container">
+            <div class="section-header">
+                <p class="section-subtitle">RSVP</p>
+                <h2 class="section-title">Will You Join Us?</h2>
+                <div class="divider">
+                    <span class="line"></span>
+                    <svg class="heart-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                    <span class="line"></span>
+                </div>
+            </div>
+
+            <div class="rsvp-card">
+                <form id="rsvpForm">
+                    <div class="input-group">
+                        <label for="rsvpName">Full Name</label>
+                        <input type="text" id="rsvpName" placeholder="Enter your name" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label>Will you attend?</label>
+                        <div class="radio-group">
+                            <button type="button" class="radio-btn" data-value="attending">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>Joyfully Accepts</span>
+                            </button>
+                            <button type="button" class="radio-btn" data-value="declined">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>Regretfully Declines</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Response</button>
+                </form>
+            </div>
+
+            <div id="rsvpListContainer" class="rsvp-list-container" style="display:none;">
+                <p class="rsvp-list-title">Guest Responses (<span id="rsvpCount">0</span>)</p>
+                <div id="rsvpList" class="rsvp-list"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="divider">
+            <span class="line"></span>
+            <svg class="heart-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            <span class="line"></span>
+        </div>
+        <p class="footer-names">Sophia & Alexander</p>
+        <p class="footer-date">June 15, 2025</p>
+        <p class="footer-credit">Crafted with Love</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
